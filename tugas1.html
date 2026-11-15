@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Individu Menu Utama - Website HTML Pertama</title>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <table border="1" width="100%" cellpadding="15" cellspacing="0">
+        <tr>
+            <td colspan="2" align="center">
+                <h1>Website Pertama Saya</h1>
+                <img src="https://imgs.search.brave.com/YG1ZwmvbiIBVHxW1mWsGHzBFVKSA638tigR6a-IRYT0/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9sb2dv/d2lrLmNvbS9jb250/ZW50L3VwbG9hZHMv/aW1hZ2VzL3VuaXZl/cnNpdGFzLXN1bWF0/ZXJhLXV0YXJhLXVz/dTgwMzM5LmxvZ293/aWsuY29tLndlYnA" alt="Logo Website" width="200">
+                <p>Belajar HTML itu menyenangkan!</p>
+            </td>
+        </tr>
+
+        <!-- MAIN MENU -->
+        <tr>
+            <td colspan="2" align="center">
+                <h3>Menu Utama</h3>
+                Beranda |
+                <a href="profil.html">Profil</a> |
+                <a href="galeri.html">Galeri</a> | 
+                <a href="kontak.html">Kontak</a>
+            </td>
+        </tr>
+
+        <!-- SIDEBAR -->
+        <tr>
+            <td width="30%" valign="top">
+                <h2>Sidebar</h2>
+
+               <h3>Kumpulan Tugas</h3>
+                <UL>
+                         <li><a href="form.html"> TUGAS 2 MEMBUAT FORM</a></li>
+                         <li><a href="java.html"> TUGAS 3 MEMBUAT ARITMATIKA SEDERHANA</a></li>
+                         <li><a href="tugas4.html"> TUGAS 4 BOOTSTRAP</a></li>
+                </UL>
+               <h3>Menu Tambahan</h3>
+                <ul>
+                    <li><a href="#artikel1">Artikel 1: Apa itu HTML?</a></li>
+                    <li><a href="#artikel2">Artikel 2: Membuat Tabel</a></li>
+                    <li><a href="#artikel3">Artikel 3: Tips Membuat Website Lebih Menarik</a></li>
+                </ul>
+
+                <h3>Link Belajar</h3>
+                <ul>
+                    <li><a href="https://www.w3schools.com/html/">W3Schools HTML</a></li>
+                    <li><a href="https://www.youtube.com/@KelasKomputerOnline">KelasKomputerOnine</a></li>
+                </ul>
+            </td>
+
+            <!-- KONTEN UTAMA -->
+            <td width="70%" valign="top">
+                <h2>Beranda</h2>
+                <p>Selamat datang di tugas website HTML pertama saya. Website ini dibuat untuk latihan dasar pemrograman web.</p>
+                
+                <h3>Daftar Materi Pembelajaran HTML:</h3>
+                <ol>
+                    <li>Mengenal Tag HTML</li>
+                    <li>Membuat Tabel</li>
+                    <li>Membuat List (Daftar)</li>
+                    <li>Membuat Hyperlink (Tautan)</li>
+                    <li>Menambahkan Gambar</li>
+                    <li>Membuat Formulir</li>
+                </ol>
+
+                <!-- ARTIKEL-->
+                <h3 id="artikel1">Artikel 1: Apa itu HTML?</h3>
+                <p>HTML (HyperText Markup Language) adalah bahasa markup standar untuk membuat halaman web. Ia berfungsi menyusun struktur konten seperti teks, gambar, link, tabel, dan formulir agar bisa ditampilkan di browser. HTML bekerja dengan menggunakan tag (misalnya p untuk paragraf, h1 untuk judul, img untuk gambar) yang memberi tahu browser bagaimana menampilkan elemen tertentu. Singkatnya, HTML adalah fondasi utama sebuah website, yang kemudian bisa dipadukan dengan CSS untuk desain dan JavaScript untuk interaktivitas.</p>
+
+                <h3 id="artikel2">Artikel 2: Membuat Tabel</h3>
+<p>Tabel digunakan untuk menampilkan data dalam bentuk baris dan kolom. Berikut contoh jadwal kuliah saya pada Semester Ganjil T.A. 2026/2027:</p>
+
+<table border="1" cellpadding="5" cellspacing="0">
+    <tr>
+        <th>Hari</th>
+        <th>Mata Kuliah</th>
+        <th>Waktu</th>
+    </tr>
+    <tr>
+        <td>Senin</td>
+        <td>Pendidikan Pancasila</td>
+        <td>07:30 - 09:10</td>
+    </tr>
+    <tr>
+        <td>Senin</td>
+        <td>Bahasa Indonesia</td>
+        <td>15:20 - 17:00</td>
+    </tr>
+    <tr>
+        <td>Rabu</td>
+        <td>Pemrograman Web</td>
+        <td>08:00 - 10:30</td>
+    </tr>
+    <tr>
+        <td>Rabu</td>
+        <td>Praktikum Pemrograman Web</td>
+        <td>08:00 - 08:50</td>
+    </tr>
+    <tr>
+        <td>Kamis</td>
+        <td>Organisasi dan Arsitektur Komputer</td>
+        <td>08:00 - 09:40</td>
+    </tr>
+    <tr>
+        <td>Kamis</td>
+        <td>Matematika Dasar</td>
+        <td>10:30 - 13:00</td>
+    </tr>
+    <tr>
+        <td>Kamis</td>
+        <td>Dasar Pemrograman</td>
+        <td>13:50 - 16:20</td>
+    </tr>
+    <tr>
+        <td>Kamis</td>
+        <td>Praktikum Dasar Pemrograman</td>
+        <td>13:50 - 14:40</td>
+    </tr>
+    <tr>
+        <td>Jumat</td>
+        <td>Pengantar Teknologi Informasi</td>
+        <td>08:00 - 09:40</td>
+    </tr>
+</table>
+
+
+
+                <h3 id="artikel3">Artikel 3: Tips Membuat Website Lebih Menarik</h3>
+<p>Selain memahami struktur HTML, ada beberapa hal yang bisa membuat website terlihat lebih menarik:</p>
+<ul>
+    <li>Gunakan <strong>CSS</strong> untuk mempercantik tampilan (warna, font, layout).</li>
+    <li>Tambahkan gambar atau ikon agar konten lebih hidup.</li>
+    <li>Pastikan navigasi mudah dipahami oleh pengunjung.</li>
+    <li>Gunakan heading (<code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>) secara terstruktur.</li>
+    <li>Jaga konsistensi desain di setiap halaman.</li>
+</ul>
+
+        <!-- FOOTER -->
+        <tr>
+            <td colspan="2" align="center">
+                <small><p>FOOTER - Hak Cipta &copy; 2026 | Dibuat oleh M. Fachri</p></small>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

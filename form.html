@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2 style="text-align:center;">Tugas 2 Membuat Form</h2>
+    <br><br>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Login Ke Akun</legend>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm">Konfirmasi Password:</label>
+            <input type="password" id="confirm" name="confirm" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Data</legend>
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <p>Jenis Kelamin:</p>
+            <label><input type="radio" id="pria" name="gender" value="Pria"> Laki-laki</label>
+            <label><input type="radio" id="wanita" name="gender" value="Wanita"> Perempuan</label>
+            <br>
+
+            <p>Informasi yang Disukai:</p>
+            <label><input type="checkbox" id="olahraga" name="info[]" value="Olahraga"> Olahraga</label>
+            <label><input type="checkbox" id="travelling" name="info[]" value="Travelling"> Travelling</label>
+            <label><input type="checkbox" id="kesehatan" name="info[]" value="Kesehatan"> Kesehatan</label>
+        </fieldset>
+
+            
+        <div class="buttons" style="text-align: center;">
+            <input type="submit" value="Kirim">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+</html>

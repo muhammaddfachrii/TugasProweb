@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cek Nilai</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      margin-top: 100px;
+      background-color: aqua;
+    }
+
+    .box {
+      background-color: rgb(255, 255, 255);
+      padding: 25px 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    input {
+      padding: 8px;
+      font-size: 16px;
+      border: 1px solid #aaa;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 8px 16px;
+      font-size: 16px;
+      background-color: #4a6cf7;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #3856d6;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    Input Nilai
+    <input type="number" id="nilai" min="0" max="100">
+    <button onclick="cekNilai()">Cek Nilai</button>
+  </div>
+
+  <script>
+    function cekNilai() {
+      var input = document.getElementById("nilai").value;
+      var nilai = Number(input);
+      var grade;
+      var pesan;
+
+      if (input === "" || nilai < 0 || nilai > 100) {
+        alert("Nilai harus antara 0 sampai 100");
+        return;
+      }
+
+     if (nilai >= 80) {
+  grade = "A";
+  pesan = "Selamat, Anda mendapatkan nilai ";
+  } else if (nilai >= 75 && nilai < 80) {
+  grade = "B+";
+  pesan = "Selamat, Anda mendapatkan nilai ";
+  } else if (nilai >= 70 && nilai < 75) {
+  grade = "B";
+  pesan = "Anda Mendapatkan Nilai ";
+  } else if (nilai >= 65 && nilai < 70) {
+  grade = "C+";
+  pesan = "Anda Mendapatkan Nilai ";
+  }else if (nilai >= 60 && nilai < 65) {
+  grade = "C";
+  pesan = "Anda Mendapatkan Nilai ";
+  } else if (nilai >= 55 && nilai < 60) {
+  grade = "D";
+  pesan = "Anda Mendapatkan Nilai ";
+  } else {
+  grade = "E";
+  pesan = "Sayang sekali, Anda mendapatkan nilai ";
+}
+
+      alert(pesan + grade);
+    }
+
+  </script>
+</body>
+</html>
